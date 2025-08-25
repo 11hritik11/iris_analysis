@@ -19,4 +19,4 @@ if st.button("Predict"):
     input_data = np.array([[speal_length, speal_width, petal_length, petal_width]])
     prediction = model.predict(input_data)
     species=["Setosa","Versicolor","Virginica"]
-    st.success(f"The flower species is {species[prediction]}")
+    st.success(f"The flower species is {species[prediction[0]]}")
